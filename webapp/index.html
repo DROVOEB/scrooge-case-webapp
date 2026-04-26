@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Scrooge Case — Игры на звёзды</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+  <div class="header">
+    <div class="balance">⭐ <span id="balance">0</span></div>
+    <div class="luck">🍀 Удача Lv.<span id="luck">1</span></div>
+  </div>
+
+  <div class="games-menu">
+    <button class="game-btn" data-game="racket">🏓 Ракетка</button>
+    <button class="game-btn" data-game="mines">💣 Минное поле</button>
+    <button class="game-btn" data-game="roulette">🎡 Рулетка</button>
+    <button class="game-btn" data-game="upgrade">⬆️ Апгрейд удачи</button>
+  </div>
+
+  <div id="game-display" class="game-display">
+    <div class="info-panel">
+      <p>🔥 Выбери игру и сделай ставку</p>
+    </div>
+    <div id="game-content"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

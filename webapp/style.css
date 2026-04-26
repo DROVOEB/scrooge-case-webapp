@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: linear-gradient(145deg, #0b0e17 0%, #0a0c14 100%);
+  color: #f5f0e6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(30, 40, 55, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 48px;
+  padding: 12px 24px;
+  margin-bottom: 28px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.balance, .luck {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.balance span, .luck span {
+  background: linear-gradient(135deg, #ffd966, #ffb347);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.games-menu {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.game-btn {
+  background: #1f2a3e;
+  border: none;
+  color: #f5e7d9;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 60px;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.game-btn:hover {
+  transform: translateY(-3px);
+  background: #2c3a55;
+}
+
+.game-display {
+  background: rgba(20, 28, 40, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 48px;
+  padding: 24px;
+  border: 1px solid #ffd96630;
+  transition: 0.2s;
+  min-height: 380px;
+}
+
+.info-panel {
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.bet-control {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.bet-control input {
+  background: #0f1725;
+  border: 1px solid #f1c232;
+  border-radius: 40px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 140px;
+}
+
+.play-btn {
+  background: linear-gradient(95deg, #e6b422, #d98d2b);
+  border: none;
+  border-radius: 48px;
+  padding: 12px 28px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #0a0c14;
+}
+
+.result-area {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+@keyframes pulseWin {
+  0% { text-shadow: 0 0 0px gold; transform: scale(1);}
+  100% { text-shadow: 0 0 20px gold; transform: scale(1.05);}
+}
+
+.win-animation {
+  animation: pulseWin 0.5s ease-in-out;
+}
