@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scrooge Case — игры, кейсы, апгрейд</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-container">
+    <div class="status-bar">
+        <div class="balance">⭐ <span id="balance">0</span></div>
+        <div class="balance">🎲 <span id="casesCount">0</span> кейсов</div>
+    </div>
+
+    <div class="games-grid">
+        <div class="game-card" data-game="live">
+            <div class="game-icon">🎬</div>
+            <div class="game-name">LIVE</div>
+            <div class="game-badge">Бесплатно · 2 кейса</div>
+        </div>
+        <div class="game-card" data-game="roulette">
+            <div class="game-icon">🎡</div>
+            <div class="game-name">Рулетка</div>
+            <div class="game-badge">20 кейсов</div>
+        </div>
+        <div class="game-card" data-game="pvp">
+            <div class="game-icon">⚔️</div>
+            <div class="game-name">PvP</div>
+            <div class="game-badge"><span class="badge-online">● Онлайн</span></div>
+        </div>
+        <div class="game-card" data-game="crash">
+            <div class="game-icon">💥</div>
+            <div class="game-name">Краш</div>
+            <div class="game-badge"><span class="badge-online">● Онлайн</span></div>
+        </div>
+        <div class="game-card" data-game="slots">
+            <div class="game-icon">🎰</div>
+            <div class="game-name">Слоты</div>
+            <div class="game-badge">5 кейсов</div>
+        </div>
+        <div class="game-card" data-game="eggs">
+            <div class="game-icon">🥚</div>
+            <div class="game-name">Яйца</div>
+            <div class="game-badge">6 кейсов</div>
+        </div>
+    </div>
+
+    <div class="upgrade-card" id="upgradeMainBtn">
+        <div class="upgrade-title">⬆️ Апгрейд</div>
+        <div class="game-badge">Улучшите свои подарки</div>
+        <button class="upgrade-btn">🔧 Улучшить</button>
+    </div>
+
+    <div class="stats-label">🎮 06 игр</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
